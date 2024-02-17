@@ -2,11 +2,15 @@ body {
     background-color: #121417;
 }
 
+nav.home_menu{
+    text-align: center;
+}
+
 nav.home_menu li.btn {
     margin-top: 30px;
     display: inline-block;
     list-style-type: none;
-    margin-left: 5px;
+
 }
 
 a.button {
@@ -27,8 +31,8 @@ a.button:hover {
 div.top_page_home {
     img.top {
         margin-top: 25px;
-        width: 1920px;
-        height: 580px;
+        width: 100%;
+        text-align: center;
         border-radius: 25px;
         margin-bottom: 30px;
     }
@@ -49,20 +53,25 @@ div.gallery {
 
     text-align: center;
     float: left;
-    margin: 20px;
-    vertical-align: top;
+    margin-left: 72px;
     background-color: #1C1D1D;
-    color: white;
-    margin-left: 35px;
-    padding-bottom: 130px;
+    padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
-    font-size: 35px;
-    border: 2px inset dodgerblue;
     border-radius: 30px;
-    height: 500px;
-    width: 330px;
+    border: 2px inset dodgerblue;
+
+    p {
+        font-size: 35px;
+        color: white;
+    }
+    img {
+        border-radius: 30px;
+        height: 500px;
+        width: 330px;
+    }
 }
+
 p.separation-line {
     margin-top: 685px;
     border: 5px solid dodgerblue;
@@ -71,13 +80,13 @@ p.separation-line {
 
 div.fist_parts {
 
-    vertical-align: top;
+    vertical-align: center;
     background-color: #1C1D1D;
     color: white;
-    padding-bottom: 50px;
     padding-left: 15px;
     padding-right: 15px;
-    font-size: 22px;
+    padding-bottom: 65px;
+    font-size: 25px;
     border: 2px inset dodgerblue;
     border-radius: 30px;
     margin-bottom: 30px;
@@ -86,7 +95,7 @@ div.fist_parts {
         border: 0px;
         border-radius: 5px;
         float: right;
-        margin-right: 110px;
+        margin-right: 200px;
         font-size: 30px;
         a {
             text-decoration: none;
@@ -102,8 +111,8 @@ div.fist_parts {
     img {
         margin-top: 20px;
         margin-right: 20px;
-        height: 480px;
-        width: 880px;
+        height: 550px;
+        width: 1230px;
         float: left;
         border: 1px solid orange;
         border-radius: 30px;
@@ -116,10 +125,10 @@ div.second_parts {
     vertical-align: top;
     background-color: #1C1D1D;
     color: white;
-    padding-bottom: 170px;
+    padding-bottom: 70px;
     padding-left: 15px;
     padding-right: 15px;
-    font-size: 22px;
+    font-size: 25px;
     border: 2px inset dodgerblue;
     border-radius: 30px;
     margin-bottom: 30px;
@@ -129,7 +138,7 @@ div.second_parts {
         border: 0px;
         border-radius: 5px;
         float: left;
-        margin-left: 110px;
+        margin-left: 200px;
         font-size: 30px;
         padding-left: 40px;
         padding-right: 40px;
@@ -148,8 +157,8 @@ div.second_parts {
     img {
         margin-top: 20px;
         margin-left: 20px;
-        height: 480px;
-        width: 880px;
+        height: 550px;
+        width: 1230px;
         float: right;
         border: 1px solid orange;
         border-radius: 30px;
@@ -172,6 +181,7 @@ div.sponsored {
     border: 2px solid dodgerblue;
     border-radius: 30px;
     text-align: center;
+    margin-top: 30px;
     p {
         color: white;
         font-size: 30px;
@@ -180,6 +190,7 @@ div.sponsored {
     button {
         background-color: #1C1D1D;
         border: #1C1D1D;
+        margin: 40px;
     }
     img {
         height: 275px;
@@ -187,57 +198,60 @@ div.sponsored {
     }
 }
 
-div.footer {
-    background-color: #1C1D1D;
-    font-size: 20px;
-    margin-top: 30px;
+footer {
 
-    p.footer_description{
-        color: white;
-        float: left;
-        padding: 10px;
-        border: 2px solid dodgerblue;
-        border-radius: 20px;
-        margin: 10px;
-        margin-left: 65px;
+    margin-top: 30px;
+    p.bottom {
+        padding-bottom: 180px;
     }
-    p.footer_copyright{
-        color: white;
+    vertical-align: top;
+    padding: 10px;
+    background-color: #1C1D1D;
+    div.legal {
         float: left;
-        padding: 10px;
-        border: 2px solid dodgerblue;
-        border-radius: 20px;
-        margin: 10px;
-        padding-bottom: 105px;
-    }
-    p.footer_page{
-        color: white;
-        float: left;
-        padding: 10px;
-        padding-right: 120px;
-        border: 2px solid dodgerblue;
-        border-radius: 20px;
-        margin: 10px;
-        padding-bottom: 10px;
+        h1.legal_title {
+            margin-left: 80px;
+            font-size: 30px;
+        }
+        ul {
+            list-style-type: none;
+
+        }
+        li {
+            padding: 5px;
+        }
         a {
+            margin-left: 20px;
+            font-size: 20px;
+            color: whitesmoke;
             text-decoration: none;
-            margin-left: 30px;
-            color: white;
+
         }
     }
-    p.footer_legal{
-        color: white;
-        float: left;
-        padding: 10px;
-        padding-right: 120px;
-        border: 2px solid dodgerblue;
-        border-radius: 20px;
-        margin: 10px;
-        padding-bottom: 55px;
-        a {
-            text-decoration: none;
-            margin-left: 30px;
-            color: white;
+
+    div.description_footer {
+        float: right;
+        h1.description_title {
+            margin-left: 280px;
+            font-size: 30px;
+            margin-right: 50px;
         }
+        p.description_text {
+            font-size: 20px;
+            margin-left: 220px;
+            margin-right: 20px;
+        }
+    }
+    div.banniere_footer {
+        margin-right: 130px;
+        text-align: center;
+        float: right;
+        img {
+            border-radius: 30px;
+            border: 2px solid orange;
+            height: 200px;
+            width: 700px;
+        }
+
     }
 }
